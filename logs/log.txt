@@ -1,0 +1,61 @@
+GET /api/newsposts/512 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+DELETE /api/newsposts/5 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+DELETE /api/newsposts/5 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+GET /api/newsposts/5 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+GET /api/newsposts/5 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+GET /api/newsposts query: {} body:{"title":"Xaribub","text":"Son defe"}  
+GET /api/newsposts query: {} body:{"title":"Xaribub","text":"Son defe"}  
+GET /api/newsposts query: {} body:{}  
+GET /api/newsposts query: {} body:{}  
+GET /api/newsposts query: {} body:{}  
+GET /api/newsposts/5 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+DELETE /api/newsposts/5 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+DELETE /api/newsposts/5 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+DELETE /api/newsposts/5 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+DELETE /api/newsposts/5 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+DELETE /api/newsposts/5 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+DELETE /api/newsposts/5 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+DELETE /api/newsposts/5 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+DELETE /api/newsposts/5 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+DELETE /api/newsposts/5 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+DELETE /api/newsposts/5 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+DELETE /api/newsposts/5 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+DELETE /api/newsposts/5 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+DELETE /api/newsposts/5 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+DELETE /api/newsposts/5 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+DELETE /api/newsposts/5 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+DELETE /api/newsposts/51212 query: {} body:{"title":"Xaribub","text":"Son defe"}  
+POST /api/newsposts/51212 query: {} body:{"title":"Ehsen","text":"Mene,sene bize"}  
+POST /api/newsposts/ query: {} body:{"title":"Ehsen","text":"Mene,sene bize"}  
+PUT /api/newsposts/18d96ddb-12a6-4539-afe9-615dbfe20f93 query: {} body:{"title":"Microsoft Tech Company"}  
+PUT /api/newsposts/18d96ddb-12a6-4539-afe9-615dbfe20f93 query: {} body:{}  
+PUT /api/newsposts/18d96ddb-12a6-4539-afe9-615dbfe20f93 query: {} body:{}  
+PUT /api/newsposts/18d96ddb-12a6-4539-afe9-615dbfe20f93 query: {} body:{}  
+PUT /api/newsposts/18d96ddb-12a6-4539-afe9-615dbfe20f93 query: {} body:{}  
+PUT /api/newsposts/18d96ddb-12a6-4539-afe9-615dbfe20f93 query: {} body:{}  
+GET /api/newsposts/ query: {} body:{}  
+GET /api/newsposts/2 query: {} body:{}  
+GET /api/newsposts/167cfc39-d087-4b65-85f9-f34aff359e90 query: {} body:{}  
+GET /api/newsposts?page=1&size=2 query: {} body:{}  
+GET /api/newsposts?page=1&size= query: {} body:{}  
+POST /api/newsposts/ query: {} body:{"title":"Debug "}  
+POST /api/newsposts/ query: {} body:{"title":"Debug "}  
+POST /api/newsposts/ query: {} body:{"title":"Debug ","Text":"ads"}  
+POST /api/newsposts/ query: {} body:{"title":"Debug ","text":"Full data"}  
+PUT /api/newsposts/ query: {} body:{"title":"Debug "}  
+PUT /api/newsposts/ query: {} body:{"title":"Debug "}  
+PUT /api/newsposts/ query: {} body:{"title":"Debug "}  
+PUT /api/newsposts/7fbaf76c-29fe-4ce7-9b4f-8a5fdc5a5c3d query: {} body:{"title":"Conversation"}  
+PUT /api/newsposts/7fbaf76c-29fe-4ce7-9b4f-8a5fdc5a5c3d query: {} body:{"title":"Conversationaa","Text":"off"}  
+PUT /api/newsposts/7fbaf76c-29fe-4ce7-9b4f-8a5fdc5a5c3d query: {} body:{"title":"Conversationaaa","Text":"off"}  
+PUT /api/newsposts/7fbaf76c-29fe-4ce7-9b4f-8a5fdc5a5c3d query: {} body:{"title":"Conversationaaa","Text":"off"}  
+PUT /api/newsposts/7fbaf76c-29fe-4ce7-9b4f-8a5fdc5a5c3d query: {} body:{"title":"Conversationaaa","text":"zp"}  
+DELETE /api/newsposts/7fbaf76c-29fe-4ce7-9b4f-8a5fdc5a5c3d query: {} body:{"title":"Conversationaaa","text":"zp"}  
+DELETE /api/newsposts/7fbaf76c-29fe-4ce7-9b4f-8a5fdc5a5c3d query: {} body:{"title":"Conversationaaa","text":"zp"}  
+DELETE /api/newsposts/7fbaf76c-29fe-4ce7-9b4f-8a5fdc5a5c3d query: {} body:{"title":"Conversationaaa","text":"zp"}  
+DELETE /api/newsposts/7fbaf76c-29fe-4ce7-9b4f-8a5fdc5a5c3d query: {} body:{"title":"Conversationaaa","text":"zp"}  
+DELETE /api/newsposts/7fbaf76c-29fe-4ce7-9b4f-8a5fdc5a5c3d query: {} body:{"title":"Conversationaaa","text":"zp"}  
+DELETE /api/newsposts/7fbaf76c-29fe-4ce7-9b4f-8a5fdc5a5c3d query: {} body:{"title":"Conversationaaa","text":"zp"}  
+DELETE /api/newsposts/7fbaf76c-29fe-4ce7-9b4f-8a5fdc5a5c3d query: {} body:{"title":"Conversationaaa","text":"zp"}  
+GET /api/newsposts/7fbaf76c-29fe-4ce7-9b4f-8a5fdc5a5c3d query: {} body:{"title":"Conversationaaa","text":"zp"}  
+GET /api/newsposts/167cfc39-d087-4b65-85f9-f34aff359e90 query: {} body:{"title":"Conversationaaa","text":"zp"}  

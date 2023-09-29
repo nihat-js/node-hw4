@@ -14,7 +14,6 @@ route.get("/", async (req, res) => {
   } catch (e) {
     res.status(500).send()
   }
-
 })
 
 route.get("/:id", async (req, res) => {
@@ -36,34 +35,44 @@ route.post("/", async (req, res) => {
   let { title, text } = req.body
   try {
     let id = await Database.insert({ title, text })
-    res.send(id)
+    if (id) {
+      res.status(200).send(id)
+    }else{
+      res.status(404).send("Invalid data")
+    }
   } catch (e) {
     // console.log(e)
     res.status(500).send()
   }
+})
 
-  route.delete("/:id", async (req, res) => {
-    try {
-      let result = Database.deleteById(req.params.id)
-      if (result) {
-        res.status(200).send(result)
-      } else {
-        res.status(404).send()
-      }
+route.put("/:id", async (req, res) => {
+  try {
+    let result = await Database.updateById(req.params.id, { title: req.body.title, text: req.body.text })
+    if (result) {
+      res.status(200).send()
+    }else{
+      res.status(404).send("Invalid id")
     }
-    catch (e) {
-      res.status(500).send()
+  } catch (e) {
+    res.status(500).send()
+  }
+
+})
+
+
+route.delete("/:id", async (req, res) => {
+  try {
+    let result = await Database.deleteById(req.params.id)
+    if (result) {
+      res.status(200).send(result)
+    } else {
+      res.status(404).send()
     }
-  })
-
-  route.put("/:id",async (req,res)=>{
-    try {
-
-    }catch(e){
-
-    }
-
-  })
+  }
+  catch (e) {
+    res.status(500).send()
+  }
 })
 
 module.exports = {
