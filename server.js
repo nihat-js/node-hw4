@@ -1,16 +1,12 @@
 const express = require('express')
 const { Database } = require('./Database')
+const {apiNewsPostsRoute} = require('./routes/apiNewsPosts')
 
 const app = express()
+
+app.use(express.json())
 const port = 12000
-app.get("/api/newsposts", async (req,res)=>{
-  let data  = Database.read()
-  console.log("test")
-})
-
-app.get("/api/newposts/:id",(req,res)=>{
-
-})
+app.use("api/newsposts/",apiNewsPostsRoute)
 
 
 app.listen(port,()=>console.log(`Server started on ${port}`))
