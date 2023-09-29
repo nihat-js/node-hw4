@@ -1,41 +1,73 @@
 const express = require('express')
-const {v4}  = require('uuid')
+const { v4 } = require('uuid')
 const route = express.Router()
+const { Database } = require("../lib/Database")
 
-route.get("/", async (req,res)=>{
-  let data  =await  Database.get()
-  console.log('off')
-  res.setHeader("Content-Type","application/json")
-  res.send(JSON.stringify(data))
-})
 
-route.get("/api/newsposts/:id", async (req,res)=>{
-  let data = await Database.read()
-  let findedData = data.find(el => el.id === +req.params.id )
-  if (findedData){
-    res.status(200).send(JSON.stringify(findedData))
-  }else{
-    res.status(404).send("Not found newsposts with that id")
+// function setJsonHeader()
 
-  }
-})
-
-route.post("",async (req,res)=>{
-  let {title,text}  = req.body
-
-  if  (req.title && req.text) return res.status(401).send("Wrong data shape")
-  let newsPost = {
-    id : v4(),  
-    title,
-    text
+route.get("/", async (req, res) => {
+  try {
+    let data = await Database.get({ page: +req.query.page, size: +req.query.size })
+    res.setHeader("Content-Type", "application/json")
+    res.send(JSON.stringify(data))
+  } catch (e) {
+    res.status(500).send()
   }
 
-  route.put()
+})
 
+route.get("/:id", async (req, res) => {
+  try {
+    let result = await Database.get({ id: req.params.id })
+    if (result) {
+      res.status(200).send(result)
+    } else {
+      res.status(404).send("Not found newsposts with that id")
+    }
+  } catch (e) {
+    res.status(500).send()
+  }
+
+})
+
+
+route.post("/", async (req, res) => {
+  let { title, text } = req.body
+  try {
+    let id = await Database.insert({ title, text })
+    res.send(id)
+  } catch (e) {
+    // console.log(e)
+    res.status(500).send()
+  }
+
+  route.delete("/:id", async (req, res) => {
+    try {
+      let result = Database.deleteById(req.params.id)
+      if (result) {
+        res.status(200).send(result)
+      } else {
+        res.status(404).send()
+      }
+    }
+    catch (e) {
+      res.status(500).send()
+    }
+  })
+
+  route.put("/:id",async (req,res)=>{
+    try {
+
+    }catch(e){
+
+    }
+
+  })
 })
 
 module.exports = {
-  apiNewsPostsRoute : route
+  apiNewsPostsRoute: route
 }
 
 
